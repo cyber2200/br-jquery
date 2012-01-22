@@ -42,6 +42,16 @@ var jquery = require('br-jquery').jquery();
 The *jquery* package on npm is currently a 1.6 release so that may be
 one reason to use this package instead.
 
+## Example
+
+To run the example:
+
+```
+cd example
+npm install
+npm start
+```
+
 ## Verifying
 
 To verify that this contains the original jQuery source with a simple
