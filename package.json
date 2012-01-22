@@ -1,0 +1,29 @@
+{
+  "author": "Ben Atkin <ben@benatkin.com> (http://benatkin.com/)",
+  "name": "br-jquery",
+  "description": "a jQuery package for browserify",
+  "version": "0.0.1",
+  "homepage": "https://github.com/benatkin/br-jquery",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/benatkin/br-jquery.git"
+  },
+  "keywords": [
+    "jquery",
+    "browserify",
+    "front-end"
+  ],
+  "engines": {
+    "node": ">=0.6"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "*",
+    "request": "*",
+    "tap": "*"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "browserify": "browser"
+}
