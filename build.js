@@ -11,9 +11,9 @@ function saveWrapped(url, file, headerFooter) {
   });
 }
 
-saveWrapped('http://code.jquery.com/jquery-1.7.1.js', 'browser.js', browserHeaderFooter);
-saveWrapped('http://code.jquery.com/jquery-1.7.1.min.js', 'browser.min.js', browserHeaderFooter);
-saveWrapped('http://code.jquery.com/jquery-1.7.1.js', 'jquery.js', nodeHeaderFooter);
+saveWrapped('http://code.jquery.com/jquery-1.7.2.js', 'browser.js', browserHeaderFooter);
+saveWrapped('http://code.jquery.com/jquery-1.7.2.min.js', 'browser.min.js', browserHeaderFooter);
+saveWrapped('http://code.jquery.com/jquery-1.7.2.js', 'jquery.js', nodeHeaderFooter);
 
 // these are the headers and footers, taken from the *jquery* npm package
 
