@@ -32,16 +32,6 @@ bundle.use(jq.min); // or jq to bundle the non-minified version
 var js = bundle.bundle();
 ```
 
-If you have the deps installed (*jsdom* and *htmlparser*), you can
-jQuery for node.js using this package:
-
-```
-var jquery = require('br-jquery').jquery();
-```
-
-The *jquery* package on npm is currently a 1.6 release so that may be
-one reason to use this package instead.
-
 ## Example
 
 To run the example:
