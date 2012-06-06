@@ -16,21 +16,9 @@ var js = require('browserify')({require: {jquery: 'br-jquery'}}).bundle();
 ```
 
 This module follows the browserify convention of using `require()`, and
-uses [jQuery.noConflict()](http://api.jquery.com/jQuery.noConflict/)
+uses [jQuery.noConflict()](http://api.jquery.com/jQuery.noConflict/).
 To use the jQuery module from the browser, use something like
 `var $ = require('jquery');`
-
-To include the minified version, use a middleware:
-
-``` javascript
-var browserify = require('browserify'),
-    jq = require('br-jquery');
-
-var bundle = browserify();
-bundle.use(jq.min); // or jq to bundle the non-minified version
-
-var js = bundle.bundle();
-```
 
 ## Example
 
@@ -47,6 +35,23 @@ npm start
 To verify that this contains the original jQuery source with a simple
 wrapper around it, read and run `node build.js`, and check that the
 files haven't changed.
+
+## Minifed Version
+
+To include the minified version, use a middleware:
+
+``` javascript
+var browserify = require('browserify'),
+    jq = require('br-jquery');
+
+var bundle = browserify();
+bundle.use(jq.min); // or jq to bundle the non-minified version
+
+var js = bundle.bundle();
+```
+
+Note that browserify can minify files for you, so you may not want to use
+the minified version supplied here, even if the end result will be minified.
 
 ## Author
 
