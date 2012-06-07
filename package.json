@@ -2,7 +2,7 @@
   "author": "Ben Atkin <ben@benatkin.com> (http://benatkin.com/)",
   "name": "br-jquery",
   "description": "a jQuery package for browserify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/benatkin/br-jquery",
   "repository": {
     "type": "git",
@@ -18,10 +18,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "browserify": "~> 1.10.4",
-    "request": "~> 2.9.153",
-    "mocha": "~> 0.14.1",
-    "should": "~> 0.6.0"
+    "browserify": "*",
+    "request": "*",
+    "mocha": "*",
+    "should": "*"
   },
   "scripts": {
     "test": "mocha -r should"

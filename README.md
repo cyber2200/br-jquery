@@ -1,7 +1,7 @@
 # br-jquery
 
 `br-jquery` is a node.js module for including jQuery in browserify.
-It is currently jQuery 1.7.1.
+It is currently jQuery 1.7.2.
 
 ## Usage
 
@@ -36,9 +36,9 @@ To verify that this contains the original jQuery source with a simple
 wrapper around it, read and run `node build.js`, and check that the
 files haven't changed.
 
-## Minifed Version
+## minifed version
 
-To include the minified version, use a middleware:
+to include the minified version, use a middleware:
 
 ``` javascript
 var browserify = require('browserify'),
@@ -50,8 +50,22 @@ bundle.use(jq.min); // or jq to bundle the non-minified version
 var js = bundle.bundle();
 ```
 
-Note that browserify can minify files for you, so you may not want to use
+note that browserify can minify files for you, so you may not want to use
 the minified version supplied here, even if the end result will be minified.
+
+## old version
+
+to include 1.6.4, do this:
+
+``` javascript
+var browserify = require('browserify'),
+    jq = require('br-jquery');
+
+var bundle = browserify();
+bundle.use(jq({version: '1.6.4'})); // or {version: '1.6.4', min: true}
+
+var js = bundle.bundle();
+```
 
 ## Author
 
